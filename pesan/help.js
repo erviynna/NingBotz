@@ -24,15 +24,19 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 	
   _*${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}*_
 
- Library : *Baileys-MD*.
- Prefix : ( ${prefix} )
- Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
- Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
-
- Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
- Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
- Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
- Balance : $${toCommas(getBalance(sender, balance))}
+  𓆩☆𓆪 NINGBOTZ MENU
+╔════════════❖•ೋ°
+╟ Tanggal : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
+╟ Waktu : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
+╟ Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+╟ Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+╟ Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
+╟ Balance : $${toCommas(getBalance(sender, balance))}
+╚══════❖•ೋ°
+‼️Note : Anggap _<>_ *Tidak Ada*‼️
+  
+  _ADA BUG? KETIK ${prefix}report BUG MU_
+  ${readmore}
 
  *MAIN MENU*
  > ${prefix}menu
